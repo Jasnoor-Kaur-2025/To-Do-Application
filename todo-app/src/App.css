@@ -1,0 +1,229 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  
+}
+
+header{
+  height: 25vh;
+  background-color: rgb(69, 68, 68);
+  color: rgb(67, 120, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  height: 8vh;
+  background-color: rgb(55, 55, 55);
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav button{
+  padding: 20px;
+  list-style: none;
+  background: none;
+  border: 0cap;
+  font-size: 20px;
+  color: rgb(67, 120, 255);;
+}
+
+nav button:hover{
+  background-color: rgb(79, 79, 79);
+}
+
+.Titles{
+  height: 17vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Titles h1{
+  font-size: 50px;
+}
+
+.Titles img{
+  width: 50px;
+  padding: 10px;
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50vw;
+  height: 60vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.popup-content label{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.popup-content label input{
+  height: 50px;
+  font-size: 30px;
+  padding: 2px;
+}
+
+.popup-content label textarea{
+  height: 150px;
+  font-size: 20px;
+  padding: 3px;
+}
+
+.popup-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-buttons button {
+  padding: 25px 45px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-buttons button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.popup-buttons button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  border: 3px solid transparent; /* Default border */
+  transition: border 0.3s;
+}
+
+.color-circle.active {
+  border: 3px solid black; /* Black border when clicked */
+}
+
+
+.color-circle:hover {
+  border-color: black;
+}
+
+.body{
+  background-color: black;
+  min-height: 75vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self:center;
+  overflow-x: hidden;
+}
+
+.body  .Tasks{
+  width: 70%;
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+
+}
+
+.Tasks {
+  color: white;
+}
+
+.Tasks li{
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+
+}
+
+.Tasks h3{
+  font-size: 35px;
+}
+
+.Tasks p{
+  font-size: 25px;
+  margin: 20px;
+  overflow-y: auto;
+}
+
+.ActionsTasks button{
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 250px;
+  cursor: pointer;
+}
+
+.completion-box {
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+
+.tick {
+  color: white;
+}
+
+
